@@ -1,0 +1,16 @@
+@import url(_reset.css);
+
+:root{
+    --branco: #FFFFFF;
+    --cor-fundo: #1e1e2a;
+    --cor-letras: #FFFFFF;
+
+    --familia-corpo: 'Montserrat', sans-serif;
+    --familia-titulo-destaque: 'Elsie Swash Caps', serif;
+
+    --peso-titulo-destaque: 900;
+    --peso-botao: 700;
+    --peso-destaque: 700;
+
+    --foto-rafa: url(../Imagem/64952350_2423636741016023_6614640211575963648_n.png);
+}

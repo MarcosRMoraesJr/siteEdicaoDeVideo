@@ -1,0 +1,362 @@
+.container {
+    background-color: var(--cor-fundo);
+    height: auto;
+    width: 100vx;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 0 0;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 90%;
+}
+
+.card {
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    margin: 3rem 0 3rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--cor-fundo);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: grayscale(0.5);
+    color: var(--preto-azulado);
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+
+.primeiro {
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    margin: 3rem 0 3rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--cor-fundo);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: grayscale(0.5);
+    color: var(--preto-azulado);
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+    background-image: url(imagens/esse_sou_eu.png);
+}
+
+.segundo {
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    margin: 3rem 0 3rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--cor-fundo);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: grayscale(0.5);
+    color: var(--preto-azulado);
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+    background-image: url(imagens/hardwork_corte.png);
+}
+
+.terceiro {
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    margin: 3rem 0 3rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--cor-fundo);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: grayscale(0.5);
+    color: var(--preto-azulado);
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+    background-image: url(imagens/Hearthstopper.png);
+}
+
+.quarto{
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    margin: 3rem 0 3rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--cor-fundo);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: grayscale(0.5);
+    color: var(--preto-azulado);
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+    background-image: url(imagens/blume.png)
+}
+
+.card-text {
+    width: 60%;
+    letter-spacing: 1px;
+    margin-left: 20px;
+    margin-top: 30px;
+    font-size: 13px;
+    color: var(--branco);
+}
+
+.card-wrapper {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.card-wrapper::before {
+    content: '';
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    display: block;
+    border: 1px solid #ffffff;
+    opacity: 0;
+    transition: 0.5 ease-in-out;
+}
+
+.card-wrapper h2 {
+    visibility: hidden;
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin: 0;
+    transition: 0.5s ease-in-out;
+    color: #ffffff;
+    position: absolute;
+    top: -120px;
+}
+
+.card-wrapper p {
+    font-size: 0;
+    visibility: hidden;
+    opacity: 0;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 0.5s ease-in-out;
+    color: #ffffff;
+    position: absolute;
+    top: 90px;
+}
+
+.card:hover {
+    filter: unset;
+}
+
+.card:hover::before {
+    height: 200px;
+    width: 200px;
+    opacity: 1;
+}
+
+.card:hover > .card-wrapper p {
+    opacity: 1;
+    visibility: hidden;
+    font-size: 14px;
+}
+
+@media screen and (min-width: 1024px) {
+    .container {
+        height: auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin: 0
+        
+        0;
+    }
+    
+    .card-container {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 90%;
+    }
+    
+    .card {
+        width: 300px;
+        height: 300px;
+        border-radius: 100%;
+        margin: 3rem 0 3rem 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--cor-fundo);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        filter: grayscale(0.5);
+        color: var(--preto-azulado);
+        cursor: pointer;
+        transition: 0.5s ease-in-out;
+    }
+    
+    .card-text {
+        width: 40%;
+        letter-spacing: 1px;
+        color: var(--branco);
+        font-size: 20px;
+    }
+    
+    .card-wrapper {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+    
+    .card-wrapper::before {
+        content: '';
+        position: absolute;
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        display: block;
+        border: 1px solid #ffffff;
+        opacity: 0;
+        transition: 0.5 ease-in-out;
+    }
+
+    .primeiro {
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    margin: 3rem 0 3rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--cor-fundo);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: grayscale(0.5);
+    color: var(--preto-azulado);
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+    background-image: url(imagens/esse_sou_eu.png);
+}
+
+.segundo {
+    width: 300px;
+        height: 300px;
+        border-radius: 100%;
+        margin: 3rem 0 3rem 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--cor-fundo);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        filter: grayscale(0.5);
+        color: var(--preto-azulado);
+        cursor: pointer;
+        transition: 0.5s ease-in-out;
+    background-image: url(imagens/hardwork_corte.png);
+}
+
+.terceiro {
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    margin: 3rem 0 3rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--cor-fundo);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: grayscale(0.5);
+    color: var(--preto-azulado);
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+    background-image: url(imagens/Hearthstopper.png);
+}
+
+.quarto{
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    margin: 3rem 0 3rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--cor-fundo);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: grayscale(0.5);
+    color: var(--preto-azulado);
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+    background-image: url(imagens/blume.png)
+}
+    
+    .card-wrapper h2 {
+        font-size: 30px;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        margin: 0;
+        transition: 0.5s ease-in-out;
+        color: #ffffff;
+        position: absolute;
+        top: -120px;
+        visibility: visible;
+    }
+    
+    .card-wrapper p {
+        font-size: 0;
+        visibility: hidden;
+        opacity: 0;
+        font-weight: bold;
+        text-transform: uppercase;
+        transition: 0.5s ease-in-out;
+        color: #ffffff;
+        position: absolute;
+        top: 90px;
+    }
+    
+    .card:hover {
+        filter: unset;
+    }
+    
+    .card:hover::before {
+        height: 200px;
+        width: 200px;
+        opacity: 1;
+    }
+    
+    .card:hover > .card-wrapper p {
+        opacity: 1;
+        visibility: visible;
+        font-size: 14px;
+    }
+}

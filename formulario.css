@@ -1,0 +1,133 @@
+form {
+    position: relative;
+    background-color: var(--cor-fundo);
+    color: var(--branco);
+}
+
+form label, form legend{
+    display: contents;
+    font-size: 25px;
+    margin: 0 0 30px;
+}
+
+
+.input-padrao {
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 60px;
+    width: 50%;
+}
+
+.checkbox {
+    margin: 20px, 0;
+}
+
+.enviar {
+    width: 30%;
+    padding: 15px 0;
+    background-color: rgb(141, 141, 141);
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;	
+    transition: 1s all;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: left;
+    align-items: center;
+    margin-left: 125px;
+}
+
+table {
+    margin: 20px 0 40px;
+}
+
+thead {
+    background: #555555;
+    color: white;
+    font-weight: bold;
+}
+
+td, th {
+    border: 1px solid #000000;
+    padding: 8px 15px;
+}
+
+.contato {
+    font-size: 30px;
+    padding: 10px 0;
+    color: var(--branco);
+}
+
+@media screen and (min-width: 1024px) {
+    form {
+        position: relative; 
+        color: var(--branco);
+    }
+    
+    form label, form legend{
+        display: block;
+        font-size: 20px;
+        margin: 0 0 10px;
+    }
+    
+    .input-padrao {
+        display: block;
+        margin: 0 0 20px;
+        padding: 10px 25px;
+        width: 50%;
+    }
+    
+    .checkbox {
+        margin: 20px, 0;
+    }
+    
+    .enviar {
+        width: 20%;
+        padding: 20px 0;
+        background-color: rgb(141, 141, 141);
+        color: #ffffff;
+        font-weight: bold;
+        font-size: 20px;
+        border: none;
+        border-radius: 5px;	
+        transition: 1s all;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: left;
+        align-items: center;
+        margin-left: 250px;
+    }
+    
+    .enviar:hover {
+        background: rgb(141, 141, 141);
+        transform: scale(1.1);
+    
+    }
+    
+    table {
+        margin: 20px 0 40px;
+    }
+    
+    thead {
+        background: #555555;
+        color: white;
+        font-weight: bold;
+    }
+    
+    td, th {
+        border: 1px solid #000000;
+        padding: 8px 15px;
+    }
+
+    .contato {
+        font-size: 40px;
+        padding: 20px 0;
+        color: var(--branco);
+    }
+}

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="_variaveis.css">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="sobre.css">
+    <link rel="stylesheet" href="container.css">
+    <link rel="stylesheet" href="formulario.css">
+    <link rel="stylesheet" href="assinatura.css">
+    <title>Marcos Moraes</title>
+</head>
+<body>
+    <header class="header" id="Home">
+        <section>
+            <label for="fundo_torno">
+                <div class="imagem_play"></div>
+                <div class="imagem_play"></div>
+            </label>
+        </section>
+        <section class="header-section">
+            <div class="checkbox-container">
+                <div class="checkbox-wrapper">
+                    <input type="checkbox" id="toggle">
+                    <label class="checkbox" for="toggle">
+                        <div class="trace"></div>
+                        <div class="trace"></div>
+                        <div class="trace"></div>
+                    </label>
+                    <div class="menu">
+                        <label for="toggle"><a href="#"></a></label>
+                    </div>
+                    <nav class="menu-items">
+                        <ul>
+                            <li>
+                                <a href="#Home" for="toggle" onclick="fechar()">Home</a>
+                            </li>
+                            <li>
+                                <a href="#Sobre" for="toggle" onclick="fechar()">Sobre</a>
+                            </li>
+                            <li>
+                                <a href="#Projetos" for="toggle" onclick="fechar()">Projetos</a>
+                            </li>
+                            <li>
+                                <a href="#Contato" for="toggle" onclick="fechar()">Contato</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </section>
+            <h1 class="name">
+                <span class="primeiro-nome">Marcos</span>
+                Moraes
+            </h1>
+            <h1 class="job"><p>Edição</p> 
+                <span class="job-de"><p>de</p></span>
+                 <span class="job-videos"><p>vídeos</p></span> 
+            </h1>
+            <div class="social-media">
+                <a href="https://www.linkedin.com/in/marcos-moraes-3b396b156" class="linkedin">LinkedIn</a>
+            </div>
+    </header>
+
+    <main>
+        <section class="sobre" id="Sobre">
+            <div class="minha_foto"></div>
+            <h2 class="texto-sobre">Artista há 7 anos, sendo ator de teatro, palhaço, hipnologo e comediante Stand-Up <br><br>
+                Trabalho com o pacote Adobe, tendo foco em Gameplay, cursos e cultura pop no geral.
+        </section>
+
+        <section class="container" id="Projetos">
+            <div class="card-container">
+                <div class="card">
+                    <a href="https://youtu.be/DNSII3u8_PE" class="card primeiro">
+                        <div class="card-wrapper">
+                            <h2>Projeto 1</h2>
+                            <p>Clique para ver!</p>
+                        </div>
+                    </a>s
+                </div>
+                <div class="card-text">
+                    <p class="espaco-inicio">Edição de vídeo de gameplay <br> <br></p> 
+                    <p class="espaco-inicio">Vídeo para o canal "Esse sou eu", onde foi pedido correção de cor na câmera, cortes
+                        e acrescentar piadas em excesso durante todo vídeo.</p>
+                </div>
+            </div>
+
+            <div class="card-container">
+                <a href="https://youtu.be/6ozAGjBTbGc" class="card segundo">
+                    <div class="card-wrapper">
+                        <h2>Projeto 2</h2>
+                        <p>Clique para ver!</p>
+                    </div>
+                </a>
+                <div class="card-text">
+                    <p class="espaco-inicio">Edição de vídeo de curso. <br><br> </p> 
+                    <p class="espaco-inicio">Corte do vídeo para a plataforma "Arena Hardwork", onde foi feito correção de cor, 
+                        correção de áudio e cortes secos para mudança de câmera.</p>
+                </div>
+            </div>
+
+            <div class="card-container">
+                <a href="https://youtu.be/PvWORFKm4kE" class="card terceiro">
+                    <div class="card-wrapper">
+                        <h2>Projeto 3</h2>
+                        <p>Clique para ver!</p>
+                    </div>
+                </a>
+                <div class="card-text">
+                    <p class="espaco-inicio">Edição de vídeo sobre série Heartstopper <br><br> </p>
+                    <p class="espaco-inicio">Vídeo já cortado, onde só foi preciso fazer alguns ajustes conforme o pedido 
+                        do cliente, correção de cor, correção de áudio e acrescentar informações sobre a série Heartstopper.</p>
+                </div>
+            </div>
+
+            <div>
+                <div class="card-container">
+                    <a href="https://youtube.com/shorts/wQ53aZuQyt8?feature=share" class="card quarto">
+                        <div class="card-wrapper">
+                            <h2>Projeto 4</h2>
+                            <p>Clique para ver!</p>
+                        </div>
+                    </a>
+                    <div class="card-text">
+                        <p class="espaco-inicio">Edição de vídeo nugget de gameplay <br><br> </p>
+                        <p class="espaco-inicio">Vídeo curto de Valorant, onde foi colocado som e zoom 
+                            durante a jogada</p>
+    
+                    </div>
+                </div>
+        </section>
+
+        <form id="Contato" action="https://api.staticforms.xyz/submit" method="post">
+
+            <input type="hidden" name="accessKey" value="4ba3cbde-b270-420e-903b-cfc3807b88ad">
+            <input type="hidden" name="redirectTo" value="https://marcosmoraes.netlify.app/">
+
+            <section class="formulario">
+                <p class="contato">Entre em contato.</p>
+                <label for="nomesobrenome">Nome e sobrenome</label>
+                <input type="text" id="nomesobrenome" name="name" class="input-padrao" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" class="input-padrao" required placeholder="seuemail@dominio.com">
+
+                <label for="telefone">Telefone</label>
+                <input type="tel" id="telefone" name="phone" class="input-padrao" required placeholder="(xx)xxxxx-xxxx">
+
+                <label for="mensagem">Mensagem</label>
+                <textarea cols="70" rows="10" id="mensagem" name="message" class="input-padrao" required></textarea>
+
+                <input type="submit" value="Enviar" class="enviar">
+            </section>
+
+        </form>
+
+
+    </main>
+
+    <footer class="footer">
+        <p class="assinatura">Feito por Marcos Moraes</p>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>

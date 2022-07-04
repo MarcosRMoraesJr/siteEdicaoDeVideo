@@ -1,0 +1,458 @@
+.header {
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--cor-fundo);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+}
+
+.imagem_play:nth-child(1){
+    animation: ir_x 10s linear infinite;
+    position: absolute;
+    background-image:url(imagens/simbolos_playstation_2.png);
+    width: 300%;
+    height: 100%;
+    background-repeat: repeat-x ;
+    background-size: 3511px 40px;
+    margin: -10px 0 0 0;  
+    display: block;
+}
+
+.imagem_play:nth-child(2){
+    animation: voltar_x 10s linear infinite;
+    position: absolute;
+    background-image:url(imagens/simbolos_playstation_2.png);
+    width: 300%;
+    height: 100%;
+    background-repeat: repeat-x ;
+    background-size: 3511px 40px;
+    margin: 380px 0 0 0;
+    display: block;
+}
+
+@keyframes ir_x {
+    from {
+        transform: translateX(-180vw);
+    }
+    
+    to {
+        transform: translateX(-80vw);
+    }
+}
+
+@keyframes voltar_x {
+    from {
+        transform: translateX(-80vw);
+    }
+    
+    to {
+        transform: translateX(-180vw);
+    }
+}
+
+.name {
+    font-size: 45px;
+    text-transform: uppercase;
+    letter-spacing: 2px; 
+    margin: 0 0px 0 0;
+    color: var(--branco);
+    position: absolute;
+    margin:  0 150px 180px 150px;
+    display: block;
+    
+}
+
+.primeiro-nome {
+    margin-left: 1px;
+}
+
+.job {
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    line-height: 20px;
+    text-align: center;
+    position: absolute;
+    margin: 100px 50px 0 50px;
+    display: block;
+    color: var(--branco);
+}
+
+/*.job-de {
+    margin-left: 30px;
+}
+
+.job-videos {
+    margin-left: 4px;
+}*/
+
+
+.linkedin {
+    margin: 310px 0 0 0;
+    text-align: center;
+    display: block;
+}
+
+.linkedin, .youtube {
+    display: flex;
+    text-decoration: none;
+    color: var(--branco);
+    padding: 1rem 4rem;
+    border: 1px solid var(--branco);
+    min-width: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .5s ease-in-out;
+    
+}
+
+a:hover {
+    background-color: var(--branco);
+}
+
+@media screen and (min-width: 1024px) {
+    .header {
+        color: var(--cor-fundo);
+        height: 100vh;
+        width: 98.9vw;
+        background-color: var(--cor-fundo);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        box-sizing: border-box;
+        position: relative;
+        text-align: center;
+    }
+
+    .imagem_play:nth-child(1){
+        animation: ir_x 18s linear infinite;
+        position: absolute;
+        background-image:url(imagens/simbolos_playstation_2.png);
+        width: 200%;
+        height: 100%;
+        background-repeat: repeat-x ;
+        background-size: 3511px 40px;
+        top: 130px;  
+    }
+    
+    .imagem_play:nth-child(2){
+        animation: voltar_x 18s linear infinite;
+        position: absolute;
+        background-image:url(imagens/simbolos_playstation_2.png);
+        width: 200%;
+        height: 100%;
+        background-repeat: repeat-x ;
+        background-size: 3511px 40px;
+        margin: 200px 0 0 0;
+    }
+    
+    @keyframes ir_x {
+        from {
+            transform: translateX(-100vw);
+        }
+        
+        to {
+            transform: translateX(-2vw);
+        }
+    }
+    
+    @keyframes voltar_x {
+        from {
+            transform: translateX(0vw);
+        }
+        
+        to {
+            transform: translateX(-98vw);
+        }
+    }
+
+    .name {
+        font-size: 50px;
+        text-transform: uppercase;
+        text-align: center;
+        letter-spacing: 4px;
+        line-height: 80px;
+        margin: 0 0 300px 500px;
+        position: absolute; 
+        display: block;
+    }
+    
+    .job {
+        font-size: 25px;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        line-height: 29px;
+        margin: 0 0 0 100px;
+        position: absolute;
+        top: 305px;
+        left: 580px;
+        text-align: center;
+    
+    }
+
+    .job-de {
+        margin-left: 0px;
+    }
+
+    .job-videos {
+        margin-left: 0px;
+    }
+    
+    .linkedin {
+        display: block;
+        position: absolute;
+        margin: 60px 640px 0 640px;
+        text-align: center;
+    }
+    
+    .social-media a{
+        text-decoration: none;
+        color: var(--branco);
+        padding: 1rem 4rem;
+        border: 1px solid var(--branco);
+        min-width: 4rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: .5s ease-in-out;
+
+    }
+    
+    a:hover {
+        background-color: var(--branco);
+        color: var(--cor-fundo);
+    }
+}
+
+/* MENU HAMBURGUER */
+
+.checkbox-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.checkbox {
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 9999;
+    transition: 400ms ease-in-out 0s;
+}
+
+.checkbox .trace {
+    width: 50px;
+    height: 2px;
+    background-color: var(--branco);
+    position: absolute;
+    border-radius: 4px;
+    transition: 0.5s ease-in-out;
+}
+
+.checkbox .trace:nth-child(1) {
+    top: 26px;
+    transform: rotate(0);
+}
+
+.checkbox .trace:nth-child(2) {
+    top: 46px;
+    transform: rotate(0);
+}
+
+.checkbox .trace:nth-child(3) {
+    top: 66px;
+    transform: rotate(0);
+}
+
+#toggle {
+    display: none;
+}
+
+@media screen and (min-width: 1024px) {
+    .checkbox-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .checkbox {
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        display: flex;
+        justify-content: center;
+        cursor: pointer;
+        z-index: 9999;
+        transition: 400ms ease-in-out 0s;
+    }
+    
+    .checkbox .trace {
+        width: 50px;
+        height: 2px;
+        background-color: var(--branco);
+        position: absolute;
+        border-radius: 4px;
+        transition: 0.5s ease-in-out;
+    }
+    
+    .checkbox .trace:nth-child(1) {
+        top: 26px;
+        transform: rotate(0);
+    }
+    
+    .checkbox .trace:nth-child(2) {
+        top: 46px;
+        transform: rotate(0);
+    }
+    
+    .checkbox .trace:nth-child(3) {
+        top: 66px;
+        transform: rotate(0);
+    }
+    
+    #toggle {
+        display: none;
+    }
+}
+
+/* MENU */
+
+.menu {
+    position: absolute;
+    top: 28px;
+    right: 30px;
+    background-color: transparent;
+    height: 4px;
+    width: 10px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 0px 0px #ffffff;
+    z-index: -1;
+    transition: 400ms ease-in-out 0s;
+}
+
+.menu-items {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+    z-index: 2;
+    opacity: 0;
+    visibility: hidden;
+    transition: 400ms ease-in-out 0s;
+    font-size: 40px;
+}
+
+.menu-items ul {
+    list-style-type: none;
+}
+
+.manu-items ul li a{
+    margin: 10px 0;
+    color: var(--branco);
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 40px;
+}
+
+@media screen and (min-width: 1024px) {
+    .menu {
+        position: absolute;
+        top: 28px;
+        right: 30px;
+        background-color: transparent;
+        height: 50px;
+        width: 70px;
+        border-radius: 50%;
+        box-shadow: 0px 0px 0px 0px #ffffff;
+        z-index: -1;
+        transition: 400ms ease-in-out 0s;
+    }
+    
+    .menu-items {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;    
+        align-items: center;
+        z-index: 2;
+        opacity: 0;
+        visibility: hidden;
+        transition: 400ms ease-in-out 0s;
+        font-size: 40px;
+    }
+    
+    .menu-items ul {
+        list-style-type: none;
+    }
+    
+    .manu-items ul li a{
+        margin: 10px 0;
+        color: var(--branco);
+        text-decoration: none;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        font-size: 40px;
+    }
+}
+
+/* MENU ANIMATION */
+
+#toggle:checked + .checkbox .trace:nth-child(1){
+    transform: rotate(45deg);
+    top: 47px;    
+}
+
+#toggle:checked + .checkbox .trace:nth-child(2){
+    transform: translate(-100px);
+    width: 30px;
+    visibility: hidden;
+    opacity: 0;
+}
+
+#toggle:checked + .checkbox .trace:nth-child(3){
+    transform: rotate(-45deg);
+    top: 48px;    
+}
+
+#toggle:checked + .checkbox {
+    background-color: #ffffff;
+}
+
+#toggle:checked ~.menu {
+    box-shadow: 0px 0px 0px 90vmax #ffffff;
+    z-index: 1;
+}
+
+#toggle:checked ~ .menu-items {
+    visibility: visible;
+    opacity: 1;
+    transition: 400ms ease-in-out 0s;
+}

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Elsie+Swash+Caps:wght@900&family=Montserrat:wght@400;700&display=swap" 
+    rel="stylesheet">
+    <link rel="stylesheet" href="style/base.css">
+    <link rel="stylesheet" href="style/_variaveis.css">
+    <link rel="stylesheet" href="style/home.css">
+    <link rel="stylesheet" href="style/sobre.css">
+    <link rel="stylesheet" href="style/container.css">
+    <link rel="stylesheet" href="style/formulario.css">
+    <link rel="stylesheet" href="style/assinatura.css">
+    <title>Portifolio</title>
+</head>
+<body>
+    <header class="header" id="Home">
+        <section class="header-section">
+            <div class="checkbox-container">
+                <div class="checkbox-wrapper">
+                    <input type="checkbox" id="toggle">
+                    <label class="checkbox" for="toggle">
+                        <div class="trace"></div>
+                        <div class="trace"></div>
+                        <div class="trace"></div>
+                    </label>
+                    <div class="menu">
+                        <label for="toggle"><a href="#"></a></label>
+                    </div>
+                    <nav class="menu-items">
+                        <ul>
+                            <li>
+                                <a href="#Home" for="toggle" onclick="fechar()">Home</a>
+                            </li>
+                            <li>
+                                <a href="#Sobre" for="toggle" onclick="fechar()">Sobre</a>
+                            </li>
+                            <li>
+                                <a href="#Projetos" for="toggle" onclick="fechar()">Projetos</a>
+                            </li>
+                            <li>
+                                <a href="#Contato" for="toggle" onclick="fechar()">Contato</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </section>
+            <h1 class="name">
+                <span class="primeiro-nome">Rafaela</span>
+                Carvalho
+            </h1>
+            <h1 class="job"><p>Edição</p> 
+                <span class="job-de"><p>de</p></span>
+                 <span class="job-videos"><p>vídeos</p></span> 
+            </h1>
+            <div class="social-media">
+                <a href="https://www.linkedin.com" class="linkedin">LinkedIn</a>
+            </div>
+    </header>
+
+    <main>
+        <section class="sobre" id="Sobre">
+            <h2 class="texto-sobre">Formada em cinema na Anhembi Morumbi, focada em edição de vídeo
+                 e produção. <br><br>Possuo curso de edição pela CadriTech e Alura e curso
+                 de Correção de Cor pelo professor Rodrigo Crissiuma.</h2>
+        </section>
+        <section class="container" id="Projetos">
+            <div class="card-container">
+                <div class="card">
+                    <a href="https://www.youtube.com/watch?v=K-iND4IIzQs" class="card-wrapper">
+                        <h2>Projeto 1</h2>
+                        <p>Clique para ver!</p>
+                    </a>s
+                </div>
+                <div class="card-text">
+                    <p class="espaco-inicio">TCC feito na Anhembi Morumbi onde fui produtora e produtora executiva. <br> <br></p> 
+                    <p class="espaco-inicio">O curta nos rendeu 10 prêmios,
+                     entre eles "Melhor Grito" no festival Beside The Seaside, no Reino Unido e "Melhor Direção", "Melhor Filme" e "Melhor Roteiro"
+                      no festival POE de Cinema Fantástico no Vale do Paraiba</p>  <br> <br> <p class="espaco-inicio">Sinopse: Tete Barilove está morta,
+                    mas seu corpo desapareceu. Beni, uma fã, descobre pistas que podem trazer a verdade sobre a cantora mais famosa
+                    dos anos 90.</p>
+                </div>
+            </div>
+            <div class="card-container">
+                <a href="https://youtu.be/OpFWAwcbtTg" class="card">
+                    <div class="card-wrapper">
+                        <h2>Projeto 2</h2>
+                        <p>Clique para ver!</p>
+                    </div>
+                </a>
+                <div class="card-text">
+                    <p class="espaco-inicio">TCC feito na Anhembi Morumbi, onde fiz a montagem e correção de cor do curta. <br><br> </p> 
+                    <p class="espaco-inicio">Sinopse: Um poeta que passa por bloqueio criativo, recebe de sua esposa o conselho que pode ser 
+                    a solução de seu problema, revivendo uma intensa angústia.</p>
+                </div>
+            </div>
+            <div class="card-container">
+                <a href="https://youtube.com/playlist?list=PLkq5QhX3WdkRRm5Zc0d1xJpU6zJyXXVSr" class="card">
+                    <div class="card-wrapper">
+                        <h2>Projeto 3</h2>
+                        <p>Clique para ver!</p>
+                    </div>
+                </a>
+                <div class="card-text">
+                    <p class="espaco-inicio">Projeto TV Anhembi. <br><br> </p>
+                    <p class="espaco-inicio">Aqui estão alguns vídeos que fiz durante dois semestres de estágio.</p>
+
+                </div>
+            </div>
+        </section>
+        <form id="Contato" action="https://api.staticforms.xyz/submit" method="post">
+
+            <input type="hidden" name="accessKey" value="51529029-be4b-4193-b0a4-ee004f71691d">
+            <input type="hidden" name="redirectTo" value="https://rafaelacarvalho.netlify.app/">
+
+            <p class="contato">Entre em contato.</p>
+            <label for="nomesobrenome">Nome e sobrenome</label>
+            <input type="text" id="nomesobrenome" name="name" class="input-padrao" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" class="input-padrao" required placeholder="seuemail@dominio.com">
+
+            <label for="telefone">Telefone</label>
+            <input type="tel" id="telefone" name="phone" class="input-padrao" required placeholder="(xx)xxxxx-xxxx">
+
+            <label for="mensagem">Mensagem</label>
+            <textarea cols="70" rows="10" id="mensagem" name="message" class="input-padrao" required></textarea>
+
+            <input type="submit" value="Enviar" class="enviar">
+
+        </form>
+
+    </main>
+
+    <footer class="footer">
+        Feito por Marcos Moraes
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
